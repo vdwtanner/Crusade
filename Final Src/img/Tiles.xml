@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="Tiles.xsd" generated="2015-12-01T01:18:17">
+<Tiles>
+<ID>1</ID>
+<Name>Dirt</Name>
+<IsAtlas>1</IsAtlas>
+<Path>Tiles/dirt.png</Path>
+<HP>6</HP>
+<Background_x0020_ID>9</Background_x0020_ID>
+</Tiles>
+<Tiles>
+<ID>2</ID>
+<Name>Grassy Dirt</Name>
+<IsAtlas>0</IsAtlas>
+<Path>Tiles/dirt_grass.png</Path>
+<HP>9</HP>
+</Tiles>
+<Tiles>
+<ID>3</ID>
+<Name>Grass</Name>
+<IsAtlas>0</IsAtlas>
+<Path>Tiles/grass_air2.png</Path>
+<HP>1</HP>
+</Tiles>
+<Tiles>
+<ID>4</ID>
+<Name>Tall Grass</Name>
+<IsAtlas>0</IsAtlas>
+<Path>Tiles/grass_air.png</Path>
+<HP>1</HP>
+</Tiles>
+<Tiles>
+<ID>5</ID>
+<Name>Stone</Name>
+<IsAtlas>0</IsAtlas>
+<Path>Tiles/gray stone.png</Path>
+<HP>50</HP>
+</Tiles>
+<Tiles>
+<ID>6</ID>
+<Name>Mossy Stone</Name>
+<IsAtlas>0</IsAtlas>
+<Path>Tiles/Mossy_Gray stone.png</Path>
+<HP>50</HP>
+</Tiles>
+<Tiles>
+<ID>7</ID>
+<Name>Ladder</Name>
+<IsAtlas>0</IsAtlas>
+<Path>Tiles/ladder.png</Path>
+<HP>-1</HP>
+</Tiles>
+<Tiles>
+<ID>8</ID>
+<Name>Crate</Name>
+<IsAtlas>0</IsAtlas>
+<Path>Tiles/Crate.png</Path>
+<HP>12</HP>
+</Tiles>
+<Tiles>
+<ID>9</ID>
+<Name>Dirt_background</Name>
+<IsAtlas>0</IsAtlas>
+<Path>Tile_Backgrounds/Dirt_background.png</Path>
+<HP>-1</HP>
+</Tiles>
+<Tiles>
+<ID>10</ID>
+<Name>Sign</Name>
+<IsAtlas>0</IsAtlas>
+<Path>Tiles/sign.png</Path>
+<HP>12</HP>
+</Tiles>
+<Tiles>
+<ID>11</ID>
+<Name>Battlement</Name>
+<IsAtlas>0</IsAtlas>
+<Path>Tiles/Stone/Gray stone_battlements.png</Path>
+<HP>50</HP>
+</Tiles>
+<Tiles>
+<ID>12</ID>
+<Name>stone bottom_half</Name>
+<IsAtlas>0</IsAtlas>
+<Path>Tiles/Stone/Gray stone_bottom_half.png</Path>
+<HP>30</HP>
+</Tiles>
+<Tiles>
+<ID>13</ID>
+<Name>stone top_half</Name>
+<IsAtlas>0</IsAtlas>
+<Path>Tiles/Stone/Gray stone_top_half.png</Path>
+<HP>30</HP>
+</Tiles>
+<Tiles>
+<ID>14</ID>
+<Name>stone bottom_left</Name>
+<IsAtlas>0</IsAtlas>
+<Path>Tiles/Stone/Gray stone_bottom_left.png</Path>
+<HP>30</HP>
+</Tiles>
+<Tiles>
+<ID>15</ID>
+<Name>stone bottom_right</Name>
+<IsAtlas>0</IsAtlas>
+<Path>Tiles/Stone/Gray stone_bottom_right.png</Path>
+<HP>30</HP>
+</Tiles>
+<Tiles>
+<ID>16</ID>
+<Name>stone top_right</Name>
+<IsAtlas>0</IsAtlas>
+<Path>Tiles/Stone/Gray stone_top_right.png</Path>
+<HP>30</HP>
+</Tiles>
+<Tiles>
+<ID>17</ID>
+<Name>stone top_left</Name>
+<IsAtlas>0</IsAtlas>
+<Path>Tiles/Stone/Gray stone_top_left.png</Path>
+<HP>30</HP>
+</Tiles>
+<Tiles>
+<ID>18</ID>
+<Name>stone window_box</Name>
+<IsAtlas>0</IsAtlas>
+<Path>Tiles/Stone/Gray stone_window_box.png</Path>
+<HP>30</HP>
+</Tiles>
+<Tiles>
+<ID>19</ID>
+<Name>stone window_arch</Name>
+<IsAtlas>0</IsAtlas>
+<Path>Tiles/Stone/Gray stone_window_arch.png</Path>
+<HP>30</HP>
+</Tiles>
+<Tiles>
+<ID>20</ID>
+<Name>Tree Bark</Name>
+<IsAtlas>0</IsAtlas>
+<Path>Tiles/Tree/Tree_bark.png</Path>
+<HP>20</HP>
+</Tiles>
+<Tiles>
+<ID>21</ID>
+<Name>Tree center bark</Name>
+<IsAtlas>0</IsAtlas>
+<Path>Tiles/Tree/Tree_center_bark.png</Path>
+<HP>20</HP>
+</Tiles>
+<Tiles>
+<ID>22</ID>
+<Name>Tree center_bottom bark</Name>
+<IsAtlas>0</IsAtlas>
+<Path>Tiles/Tree/Tree_center_bottom_bark.png</Path>
+<HP>20</HP>
+</Tiles>
+<Tiles>
+<ID>23</ID>
+<Name>Leaves center</Name>
+<IsAtlas>0</IsAtlas>
+<Path>Tiles/Tree/Leaves_center.png</Path>
+<HP>5</HP>
+</Tiles>
+<Tiles>
+<ID>24</ID>
+<Name>Leaves center_bottom</Name>
+<IsAtlas>0</IsAtlas>
+<Path>Tiles/Tree/Leaves_center_bottom.png</Path>
+<HP>5</HP>
+</Tiles>
+<Tiles>
+<ID>25</ID>
+<Name>Leaves center_top</Name>
+<IsAtlas>0</IsAtlas>
+<Path>Tiles/Tree/Leaves_center_top.png</Path>
+<HP>5</HP>
+</Tiles>
+<Tiles>
+<ID>26</ID>
+<Name>Leaves left</Name>
+<IsAtlas>0</IsAtlas>
+<Path>Tiles/Tree/Leaves_left.png</Path>
+<HP>5</HP>
+</Tiles>
+<Tiles>
+<ID>27</ID>
+<Name>Leaves left_bottom</Name>
+<IsAtlas>0</IsAtlas>
+<Path>Tiles/Tree/Leaves_left_bottom.png</Path>
+<HP>5</HP>
+</Tiles>
+<Tiles>
+<ID>28</ID>
+<Name>Leaves left_top</Name>
+<IsAtlas>0</IsAtlas>
+<Path>Tiles/Tree/Leaves_left_top.png</Path>
+<HP>5</HP>
+</Tiles>
+<Tiles>
+<ID>29</ID>
+<Name>Leaves right</Name>
+<IsAtlas>0</IsAtlas>
+<Path>Tiles/Tree/Leaves_right.png</Path>
+<HP>5</HP>
+</Tiles>
+<Tiles>
+<ID>30</ID>
+<Name>Leaves right_bottom</Name>
+<IsAtlas>0</IsAtlas>
+<Path>Tiles/Tree/Leaves_right_bottom.png</Path>
+<HP>5</HP>
+</Tiles>
+<Tiles>
+<ID>31</ID>
+<Name>Leaves right_top</Name>
+<IsAtlas>0</IsAtlas>
+<Path>Tiles/Tree/Leaves_right_top.png</Path>
+<HP>5</HP>
+</Tiles>
+<Tiles>
+<ID>32</ID>
+<Name>bkground_stone</Name>
+<IsAtlas>0</IsAtlas>
+<Path>Tiles/Stone/bkground_stone.png</Path>
+<HP>75</HP>
+</Tiles>
+<Tiles>
+<ID>33</ID>
+<Name>bkground_wood_bright</Name>
+<IsAtlas>0</IsAtlas>
+<Path>Tiles/Wood Paneling/bkground_wood_bright.png</Path>
+<HP>20</HP>
+</Tiles>
+<Tiles>
+<ID>34</ID>
+<Name>bkground_wood_mid</Name>
+<IsAtlas>0</IsAtlas>
+<Path>Tiles/Wood Paneling/bkground_wood_mid.png</Path>
+<HP>20</HP>
+</Tiles>
+<Tiles>
+<ID>35</ID>
+<Name>bkground_wood_dark</Name>
+<IsAtlas>0</IsAtlas>
+<Path>Tiles/Wood Paneling/bkground_wood_dark.png</Path>
+<HP>20</HP>
+</Tiles>
+<Tiles>
+<ID>36</ID>
+<Name>woodPanel_center</Name>
+<IsAtlas>0</IsAtlas>
+<Path>Tiles/Wood Paneling/center.png</Path>
+<HP>20</HP>
+</Tiles>
+<Tiles>
+<ID>37</ID>
+<Name>woodPanel_center_bright</Name>
+<IsAtlas>0</IsAtlas>
+<Path>Tiles/Wood Paneling/center_bright.png</Path>
+<HP>20</HP>
+</Tiles>
+<Tiles>
+<ID>38</ID>
+<Name>woodPanel_left</Name>
+<IsAtlas>0</IsAtlas>
+<Path>Tiles/Wood Paneling/left.png</Path>
+<HP>20</HP>
+</Tiles>
+<Tiles>
+<ID>39</ID>
+<Name>woodPanel_left_bright</Name>
+<IsAtlas>0</IsAtlas>
+<Path>Tiles/Wood Paneling/left_bright.png</Path>
+<HP>20</HP>
+</Tiles>
+<Tiles>
+<ID>40</ID>
+<Name>woodPanel_right</Name>
+<IsAtlas>0</IsAtlas>
+<Path>Tiles/Wood Paneling/right.png</Path>
+<HP>20</HP>
+</Tiles>
+<Tiles>
+<ID>41</ID>
+<Name>woodPanel_right_bright</Name>
+<IsAtlas>0</IsAtlas>
+<Path>Tiles/Wood Paneling/right_bright.png</Path>
+<HP>20</HP>
+</Tiles>
+<Tiles>
+<ID>42</ID>
+<Name>woodPanel_window_box</Name>
+<IsAtlas>0</IsAtlas>
+<Path>Tiles/Wood Paneling/window_box.png</Path>
+<HP>10</HP>
+</Tiles>
+<Tiles>
+<ID>43</ID>
+<Name>woodPanel_window_box_bright</Name>
+<IsAtlas>0</IsAtlas>
+<Path>Tiles/Wood Paneling/window_box_bright.png</Path>
+<HP>10</HP>
+</Tiles>
+<Tiles>
+<ID>44</ID>
+<Name>Fence</Name>
+<IsAtlas>0</IsAtlas>
+<Path>Tiles/fence.png</Path>
+<HP>15</HP>
+</Tiles>
+<Tiles>
+<ID>45</ID>
+<Name>bkground_Brimstone</Name>
+<IsAtlas>0</IsAtlas>
+<Path>Tiles/Hellstone/bkground_Brimstone.png</Path>
+<HP>80</HP>
+</Tiles>
+<Tiles>
+<ID>46</ID>
+<Name>Brimstone Bricks</Name>
+<IsAtlas>0</IsAtlas>
+<Path>Tiles/Hellstone/Brimstone Bricks.png</Path>
+<HP>45</HP>
+</Tiles>
+<Tiles>
+<ID>47</ID>
+<Name>Brimstone</Name>
+<IsAtlas>0</IsAtlas>
+<Path>Tiles/Hellstone/Brimstone.png</Path>
+<HP>10</HP>
+</Tiles>
+</dataroot>

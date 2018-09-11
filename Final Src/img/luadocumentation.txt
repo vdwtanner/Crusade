@@ -1,0 +1,297 @@
+Flags:
+Each lua trigger may have a list of flags defined at the beginning of the file to determine it's behavior
+Currently only one flag is defined for triggers.
+
+ENEMIES_CONTAINED_DEAD
+	- All enemies contained in the trigger at the start of the game must be dead before this trigger activates
+
+To set this flag, add the line
+
+	precondition = "ENEMIES_CONTAINED_DEAD"
+
+at the beginning of the lua file
+
+
+List of crusade api functions that can be called in lua trigger files:
+
+/*******************************
+	General Functions
+********************************/
+
+Yield(trigger, time) : returns void
+	- trigger = a lightuserdata trigger to yield. Use the trigger parameter of OnEnterTrigger or OnExitTrigger
+	- time = a float denoting how much time to yield.
+	Yield will resume normal execution of Crusade for a time equal to the second argument. When that time has passed, Crusade will resume the lua script's execution.
+
+
+YieldUntilInput(trigger) : returns void
+	- trigger = a lightuserdata trigger to yield. Use the trigger parameter of OnEnterTrigger or OnExitTrigger
+	Will Yield until the player presses any of a predefined list of buttons. If there is a textbox being displayed,
+	the input will go to the textbox and not trigger this function to stop yielding.
+
+
+YieldUntilDead(trigger, enemy) : returns void
+	- trigger = a lightuserdata trigger to yield. Use the trigger parameter of OnEnterTrigger or OnExitTrigger
+	- enemy = a non-immortal lightuserdata enemy. Use created enemies.
+	Yields to the main crusade thread until the enemy sends a death notification to the trigger
+
+
+PausePhysics(context) : returns void
+	- context = a lightuserdata Crusade context. Use the context parameter of OnEnterTrigger or OnExitTrigger
+	Pauses physics.
+
+
+ResumePhysics(context) : returns void
+	- context = a lightuserdata Crusade context. Use the context parameter of OnEnterTrigger or OnExitTrigger
+	Resumes physics.
+
+
+PauseAI(context) : returns void
+	- context = a lightuserdata Crusade context. Use the context parameter of OnEnterTrigger or OnExitTrigger
+	Pauses AI.
+
+
+ResumeAI(context) : returns void
+	- context = a lightuserdata Crusade context. Use the context parameter of OnEnterTrigger or OnExitTrigger
+	Resumes AI.
+
+
+Pause(context) : returns void
+	- context = a lightuserdata Crusade context. Use the context parameter of OnEnterTrigger or OnExitTrigger
+	Pauses physics, playerInput, and AI
+
+
+Resume(context) : returns void
+	- context = a lightuserdata Crusade context. Use the context parameter of OnEnterTrigger or OnExitTrigger
+	Resumes physics, playerInput, and AI
+
+
+EndLevel(context) : returns void
+	- context = a lightuserdata Crusade context. Use the context parameter of OnEnterTrigger or OnExitTrigger
+	Ends the level and loads the next level or scene in the campaign. If there is no next level, returns to menu screen.
+
+/*************************************
+	Player/Gameobject Functions
+**************************************/
+
+EnableMovementInput(context) : returns void
+	- context = a lightuserdata Crusade context. Use the context parameter of OnEnterTrigger or OnExitTrigger
+	Enables the user's ability to move 
+
+
+DisableMovementInput(context) : returns void
+	- context = a lightuserdata Crusade context. Use the context parameter of OnEnterTrigger or OnExitTrigger
+	Disables the user's ability to move 
+
+
+EnableAbilityInput(context) : returns void
+	- context = a lightuserdata Crusade context. Use the context parameter of OnEnterTrigger or OnExitTrigger
+	Enables the user's ability to use abilities
+
+
+DisableAbilityInput(context) : returns void
+	- context = a lightuserdata Crusade context. Use the context parameter of OnEnterTrigger or OnExitTrigger
+	Disables the user's ability to use abilities
+
+
+EnablePlayerFlight(context) : returns void
+	- context = a lightuserdata Crusade context. Use the context parameter of OnEnterTrigger or OnExitTrigger
+	Enables player flight with arrow keys
+
+
+DisablePlayerFlight(context) : returns void
+	- context = a lightuserdata Crusade context. Use the context parameter of OnEnterTrigger or OnExitTrigger
+	Disables player flight
+
+
+ApplyImpulse(gameobject, fx, fy) : returns void
+	- gameobject = a lightuserdata gameobject. Use the collider parameter of OnEnterTrigger or OnExitTrigger
+	- fx = float value. How much force to apply to the player in the x direction.
+	- fy = float value. How much force to apply to the player in the y direction.
+	Applies a force to the player.
+
+
+Damage(gameobject, damage) : returns void
+	- gameobject = a lightuserdata gameobject. Use the collider parameter of OnEnterTrigger or OnExitTrigger
+	- damage = int value. How much damage to deal to the player
+	Damages the player.
+
+
+Heal(gameobject, health) : returns void
+	- gameobject = a lightuserdata gameobject. Use the collider parameter of OnEnterTrigger or OnExitTrigger
+	- health = int value. How much health to restore to the player
+	Heals the player.
+
+
+GetPosition(gameobject) : returns float x, float y
+	- gameobject = a lightuserdata gameobject. Use the collider or trigger parameter of OnEnterTrigger or OnExitTrigger
+	returns the position of the gameobject.
+
+
+GetPlayerCharacter(context) : returns lightuserdata player
+	- context = a lightuserdata Crusade context. Use the context parameter of OnEnterTrigger or OnExitTrigger
+	returns the pointer to the player character.	
+
+
+MoveTo(physobject, x, y, time) : returns void
+	- physobject = a lightuserdata character, enemy, or ability 
+	- x = float value. The new x position of the object after (time) seconds
+	- y = float value. The new y position of the object after (time) seconds
+	- time = float value.
+	The physics enabled object attempts to move to (x, y) using their typical movement. Enemies and characters will walk,
+	abilities will most often fly.
+
+
+Teleport(physobject, x, y) : returns void
+	- physobject = a lightuserdata character, enemy, or ability 
+	- x = float value. The new x position of the object
+	- y = float value. The new y position of the object
+	The physics enable object automatically teleports to the location (x, y)
+
+
+EnableNoCollide(physobject) : returns void
+	- physobject = a lightuserdata character, enemy, or ability
+	Disables all collisions for the object
+
+
+DisableNoCollide(physobject) : returns void
+	- physobject = a lightuserdata character, enemy, or ability
+	Enables all collisions for the object
+
+
+/*******************************
+	Enemy Functions
+********************************/
+
+CreateEnemy(context, id, x, y) : returns lightuserdata enemy
+	- context = a lightuserdata Crusade context. Use the context parameter of OnEnterTrigger or OnExitTrigger
+	- id = int value. id of the enemy you want to spawn
+	- x = float value. The initial x position of the enemy
+	- y = float value. The initial y position of the enemy
+	Creates an enemy at (x,y) and returns the pointer to that enemy
+
+
+DestroyEnemy(enemy) : returns void
+	- enemy = a lightuserdata enemy.
+	Deletes the enemy from the world.
+
+
+/*******************************
+	Camera Functions
+********************************/
+
+CameraGetPosition(context) : returns x, y
+	- context = a lightuserdata Crusade context. Use the context parameter of OnEnterTrigger or OnExitTrigger
+	Gets the x and y position of the camera.
+
+
+CameraSetPosition(context, x, y) : returns void
+	- context = a lightuserdata Crusade context. Use the context parameter of OnEnterTrigger or OnExitTrigger
+	- x = float value. The new x position of the camera
+	- y = float value. The new y position of the camera
+	Sets the camera's position to (x, y)
+
+
+CameraMoveTo(context, x, y, time) : returns void
+	- context = a lightuserdata Crusade context. Use the context parameter of OnEnterTrigger or OnExitTrigger
+	- x = float value. The new x position of the camera after (time) seconds
+	- y = float value. The new y position of the camera after (time) seconds
+	- time = float value.
+	Moves the camera to (x, y) over (time) seconds
+
+
+CameraZoomTo(context, zoom, time) : returns void
+	- context = a lightuserdata Crusade context. Use the context parameter of OnEnterTrigger or OnExitTrigger
+	- zoom = float value. The new zoom of the camera after (time) seconds. Reasonable values range from 0.5 to 2.0
+	- time = float value.
+	Zooms the camera to the appropriate zoom percentage over (time) seconds
+
+
+CameraFollowPlayer(context) : returns void
+	- context = a lightuserdata Crusade context. Use the context parameter of OnEnterTrigger or OnExitTrigger
+	Makes the camera follow the player immediately, overriding any currently executing "MoveTo" commands
+	Also resets the zoom to its default value.
+
+/*******************************
+	Trigger Functions
+********************************/	
+
+DeactivateTrigger(trigger) : returns void
+	- trigger = a lightuserdata trigger. Use the trigger parameter of OnEnterTrigger or OnExitTrigger
+	Deactivate the trigger. If the trigger's script is still running, the script will still complete.
+
+/*******************************
+	Textbox Functions
+********************************/
+
+DisplayTextbox(context, title, msg) : returns void
+	- context = a lightuserdata Crusade context. Use the context parameter of OnEnterTrigger or OnExitTrigger
+	- title = string value. The title of the msg to display. Usually who is saying the msg
+	- msg = string value. The msg to display in the main body of the textbox.
+
+/*******************************
+	Sound Functions
+********************************/
+
+PlaySound(context, soundFile) : returns lightuserdata sound
+	- context = a lightuserdata Crusade context. Use the context parameter of OnEnterTrigger or OnExitTrigger
+	- soundFile = string value. Name of the sound file in img/Sounds/ to play
+
+
+PauseSound(sound) : returns bool
+	- sound = a lightuserdata sound. Use the return from PlaySound(context, soundFile)
+	If the sound provided still exists, it pauses the sound.
+
+
+ResumeSound(sound) : returns bool
+	- sound = a lightuserdata sound. Use the return from PlaySound(context, soundFile)
+	If the sound provided still exists, it resume the sound.
+
+
+StopSound(sound) : returns bool
+	- sound = a lightuserdata sound. Use the return from PlaySound(context, soundFile)
+	If the sound provided still exists, it stops the sound.
+	NOTE: when a sound is stopped, it will be garbage collected by the AudioManager and deleted.
+	Future calls to PauseSound, ResumeSound, or StopSound will return false.
+
+
+PauseBGM(context) : returns void
+	- context = a lightuserdata Crusade context. Use the context parameter of OnEnterTrigger or OnExitTrigger
+	pauses the games background music
+
+
+ResumeBGM(context) : returns void
+	- context = a lightuserdata Crusade context. Use the context parameter of OnEnterTrigger or OnExitTrigger
+	resumes the games background music
+
+
+SwitchBGM(context, newBGM) : returns void
+	- context = a lightuserdata Crusade context. Use the context parameter of OnEnterTrigger or OnExitTrigger
+	- newBGM = string value. Name of the sound file in img/Sounds/ to play
+	stops the background music currently playing and immediately plays "newBGM"
+
+
+SetBGMVolume(context, volume) : returns void
+	- context = a lightuserdata Crusade context. Use the context parameter of OnEnterTrigger or OnExitTrigger
+	- volume = float value. The new volume of the BGM.
+	sets the volume of the background music
+
+
+/*******************************
+	Block Functions
+********************************/
+
+DamageTile(context, damage, x, y)
+	- context = a lightuserdata Crusade context. Use the context parameter of OnEnterTrigger or OnExitTrigger
+	- damage = int value. The amount of damage to deal to the block
+	- x = float value. The x position of the block to damage	
+	- y = float value. The y position of the block to damage
+	damages all blocks from the active layer forward at (x, y)
+
+
+EmitBlockParticles(context, x, y, dirx, diry, blockID) : returns void
+	- context = a lightuserdata Crusade context. Use the context parameter of OnEnterTrigger or OnExitTrigger
+	- x = float value. The initial x position of the emitted particles
+	- y = float value. The initial y position of the emitted particles
+	- dirx, diry = float values. The direction in which to emit particles. Higher values = higher speed
+	- blockID = UINT. The id of the block particles to emit.

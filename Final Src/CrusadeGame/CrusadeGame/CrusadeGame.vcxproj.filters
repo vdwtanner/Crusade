@@ -1,0 +1,454 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="RenderEffects">
+      <UniqueIdentifier>{b26d365e-8e8d-4b5d-8bd8-2bffb63593be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FX">
+      <UniqueIdentifier>{2b6c05ca-6e54-4892-9822-acf4c42e0d96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ToolkitHeaders">
+      <UniqueIdentifier>{c26cb540-dc09-4b0a-87f9-7542faa79c20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{c699c4e1-f17f-4c1f-92bd-6dcc189e5c57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Enemies">
+      <UniqueIdentifier>{53b8efa4-9442-4e06-93bf-daa5b89bf8f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Abilities">
+      <UniqueIdentifier>{906bddae-4ef5-4993-b6f6-46b9923bf2ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Box2D">
+      <UniqueIdentifier>{1fc399fb-8d8e-4849-8aea-13b49a930bd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\LuaBindings">
+      <UniqueIdentifier>{fdcbd4b5-7d9b-4039-95a5-49ad0cfe7d4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Player">
+      <UniqueIdentifier>{8b7209ea-bf18-453d-a567-4c098b7b624c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Audio">
+      <UniqueIdentifier>{06b1ea7e-d2e9-4d82-956a-9ba18f6b836c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Particles">
+      <UniqueIdentifier>{aa74b32e-f3bc-4d22-a4cd-4b2887172062}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\CrusadeEffects.h">
+      <Filter>RenderEffects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\CrusadeVertexTypes.h">
+      <Filter>RenderEffects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Include\Audio.h">
+      <Filter>ToolkitHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Include\CommonStates.h">
+      <Filter>ToolkitHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Include\d3dx11effect.h">
+      <Filter>ToolkitHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Include\DDSTextureLoader.h">
+      <Filter>ToolkitHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Include\DirectXHelpers.h">
+      <Filter>ToolkitHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Include\Effects.h">
+      <Filter>ToolkitHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Include\GamePad.h">
+      <Filter>ToolkitHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Include\GeometricPrimitive.h">
+      <Filter>ToolkitHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Include\Keyboard.h">
+      <Filter>ToolkitHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Include\Model.h">
+      <Filter>ToolkitHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Include\Mouse.h">
+      <Filter>ToolkitHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Include\PrimitiveBatch.h">
+      <Filter>ToolkitHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Include\rapidxml.hpp">
+      <Filter>ToolkitHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Include\rapidxml_iterators.hpp">
+      <Filter>ToolkitHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Include\rapidxml_print.hpp">
+      <Filter>ToolkitHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Include\rapidxml_utils.hpp">
+      <Filter>ToolkitHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Include\ScreenGrab.h">
+      <Filter>ToolkitHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Include\SimpleMath.h">
+      <Filter>ToolkitHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Include\SpriteBatch.h">
+      <Filter>ToolkitHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Include\SpriteFont.h">
+      <Filter>ToolkitHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Include\VertexTypes.h">
+      <Filter>ToolkitHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Include\WICTextureLoader.h">
+      <Filter>ToolkitHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Include\XboxDDSTextureLoader.h">
+      <Filter>ToolkitHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Camera.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\CrusadeUtil.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\pch.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\StepTimer.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\TileSet.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\WorldTile.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\WorldTileMatrix.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\GameObject.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Rect.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\TextureLoader.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\TriggerVolume.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Enemy.h">
+      <Filter>Common\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\EnemyManager.h">
+      <Filter>Common\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Fireball.h">
+      <Filter>Common\Abilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\AbilityManager.h">
+      <Filter>Common\Abilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Box2DSingleton.h">
+      <Filter>Common\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\RayCast.h">
+      <Filter>Common\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\PipelineStates.h">
+      <Filter>RenderEffects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\MeleeEnemy.h">
+      <Filter>Common\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\MageEnemy.h">
+      <Filter>Common\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\RangedEnemy.h">
+      <Filter>Common\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\D3DManager.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Ability.h">
+      <Filter>Common\Abilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\HolyMissile.h">
+      <Filter>Common\Abilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\HolyFire.h">
+      <Filter>Common\Abilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\LuaBindings.h">
+      <Filter>Common\LuaBindings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\LuaTrigger.h">
+      <Filter>Common\LuaBindings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Lunar.h">
+      <Filter>Common\LuaBindings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\TriggerManager.h">
+      <Filter>Common\LuaBindings</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Campaign.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Character.h">
+      <Filter>Common\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Profile.h">
+      <Filter>Common\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadingScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\HUD.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelSelectScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProfileScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AbilitySelectScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EndLevelScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\AudioManager.h">
+      <Filter>Common\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\CSoundEffectInstance.h">
+      <Filter>Common\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\LevelLookUp.h">
+      <Filter>Common\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Emitter.h">
+      <Filter>Common\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ParticleManager.h">
+      <Filter>Common\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Slash.h">
+      <Filter>Common\Abilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Heal.h">
+      <Filter>Common\Abilities</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\CrusadeEffects.cpp">
+      <Filter>RenderEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\CrusadeVertexTypes.cpp">
+      <Filter>RenderEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Camera.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\pch.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\TileSet.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\WorldTile.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\WorldTileMatrix.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\GameObject.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Rect.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\TextureLoader.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\TriggerVolume.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\EnemyManager.cpp">
+      <Filter>Common\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Enemy.cpp">
+      <Filter>Common\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\AbilityManager.cpp">
+      <Filter>Common\Abilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Fireball.cpp">
+      <Filter>Common\Abilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Box2DSingleton.cpp">
+      <Filter>Common\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\PipelineStates.cpp">
+      <Filter>RenderEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\MageEnemy.cpp">
+      <Filter>Common\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\MeleeEnemy.cpp">
+      <Filter>Common\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\RangedEnemy.cpp">
+      <Filter>Common\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\D3DManager.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Ability.cpp">
+      <Filter>Common\Abilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\HolyMissile.cpp">
+      <Filter>Common\Abilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\HolyFire.cpp">
+      <Filter>Common\Abilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\LuaBindings.cpp">
+      <Filter>Common\LuaBindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\LuaTrigger.cpp">
+      <Filter>Common\LuaBindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\TriggerManager.cpp">
+      <Filter>Common\LuaBindings</Filter>
+    </ClCompile>
+    <ClCompile Include="GameScreen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Screen.h">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Campaign.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Character.cpp">
+      <Filter>Common\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Profile.cpp">
+      <Filter>Common\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadingScreen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\HUD.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuScreen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelSelectScreen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProfileScreen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AbilitySelectScreen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EndLevelScreen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\AudioManager.cpp">
+      <Filter>Common\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\CSoundEffectInstance.cpp">
+      <Filter>Common\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\LevelLookUp.cpp">
+      <Filter>Common\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Emitter.cpp">
+      <Filter>Common\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\ParticleManager.cpp">
+      <Filter>Common\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Slash.cpp">
+      <Filter>Common\Abilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Heal.cpp">
+      <Filter>Common\Abilities</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="directx.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\..\icon32.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="icon16.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="icon32.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="settings.manifest">
+      <Filter>Resource Files</Filter>
+    </Manifest>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Common\Include\SimpleMath.inl">
+      <Filter>ToolkitHeaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\Common\FX\Texture.fx">
+      <Filter>FX</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Common\FX\Particles.fx">
+      <Filter>FX</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>
