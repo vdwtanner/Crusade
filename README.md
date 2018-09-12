@@ -1,7 +1,7 @@
 # Crusade
 A semester game programming project from college. 2D side-scrolling destructible world where you play as a valiant night who levels up and gains new abilities by defeating monsters. Includes a level editor and examples of assets / scripts.
 
-[Demo video](https://www.youtube.com/watch?v=v7t99excI2Y)
+[Demo video](https://www.youtube.com/watch?v=v7t99excI2Y) (Appologies in advance for the audio quality, specifically that of the fireball explosion. My recording software distorted it for some reason)
 
 Feel free to [download a playable build](https://github.com/vdwtanner/Crusade/blob/master/Crusade%20v1.0.zip) of the game!
 
